@@ -1,0 +1,17 @@
+.main-footer {
+    padding-top: 10px;
+    font-weight: normal;
+    text-align: center;
+    background-color:#ff9800;
+  }
+  
+  .footer-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-icons > * {
+    margin-right: 5px;
+  }
+  

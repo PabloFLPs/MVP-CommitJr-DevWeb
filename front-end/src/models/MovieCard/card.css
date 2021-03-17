@@ -1,0 +1,9 @@
+.container-movie {
+    display: flex;
+    justify-content: center;
+    background-color: #ffc947;
+    margin: auto;
+    width: fit-content;
+    padding: 60px;
+    border-radius:10;
+}

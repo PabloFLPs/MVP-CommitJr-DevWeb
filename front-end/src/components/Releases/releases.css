@@ -1,0 +1,60 @@
+.releases-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffc947;
+}
+
+.releases-section {
+    margin: 5px 5px;
+    background-color: #ffc947;
+}
+
+.releases-title {
+    font-size: 160%;
+}
+
+.releases-content {
+    font-size: 120%;
+    align-items: center;
+}
+
+.container-movie {
+    display: flex;
+    justify-content: center;
+    background-color: #ffc947;
+    margin: auto;
+    width: fit-content;
+    padding: 60px;
+    border-radius:10;
+}
+
+.movie-info {
+    margin-left: 20px;
+    background-color: #ffc947;
+    align-self: center;
+}
+
+.trailer {
+    flex: 1;
+    width: 300;
+    height: 575;
+    resize: 'contain';
+}
+
+.frame {
+    resize: contain
+}
+
+@media (max-width: 100px) {
+    body {
+        font-size:93.75%
+    }
+
+}
+
+@media (max-width: 768) {
+    body {
+        font-size:80.5%
+    }
+}

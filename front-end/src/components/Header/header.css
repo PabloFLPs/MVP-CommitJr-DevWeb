@@ -1,0 +1,25 @@
+.header-initial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff9800;
+    height: 65px;
+    padding: 0 70px;
+    font-size: 160%;
+}
+
+.page-name {
+    text-align: center;
+    align-self: center;
+}
+
+.search-input {
+    background-color: #ffffffce;
+    align-self: right;
+    text-align: left;
+}
+
+.menu-links {
+    text-align: center;
+}
