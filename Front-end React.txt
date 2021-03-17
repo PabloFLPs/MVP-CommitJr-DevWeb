@@ -1,0 +1,5 @@
+Comando inicial: "yarn create react-app NomeDoApp --template-typescript"
+
+- CSS e HTML
+- Seguir o padrao visual do Figma feito pelo Iagor
+- Entrega: 4 de Marco

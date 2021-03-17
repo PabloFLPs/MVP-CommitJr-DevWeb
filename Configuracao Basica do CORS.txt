@@ -1,0 +1,16 @@
+Configuracao Basica do CORS - Cross-origin Resource Sharing:
+
+- Para instalar o CORS, basta utilizar o comando "npm install cors" (npm install --save cors, "--save" para salvar no "packages.json").
+- Incluir o CORS no pacote, assim cmo foi feito com a Express; "const cors = require("cors");".
+- Ter o "app()" utilizando o CORS, isso deve ocorrer antes de qualquer funcao do codigo: app.use(cors()).
+
+- N esquecer do comando "npm install --save @types/cors".
+
+** Ha uma forma alternativa a instrucao anterior, que e criar um "array function" com o app.use(): **
+	app.use((req, res, next) => {
+		//console.log("Acessando...");
+		res.header("Access-Control-Allow-Origin", "http://localhost:3333", "*"); //"*" qualquer URL/aplicacao pode fazer requisicao.
+		res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+		app.use(cors());
+		next();
+	});
