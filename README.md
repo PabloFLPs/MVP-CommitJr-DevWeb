@@ -25,7 +25,6 @@ Editar o "index.js" com o seguinto codigo:
 - Para executar o servidor, basta utilizar o comando "node index.js" e acessar o endereco localhost:3333/test, sendo o "/test" por causa do metodo "get()" no "index.js".
 - Agora, para adicionarmos um "auto reload", basta instalar o Nodemon com o comando "npm install -D nodemon", sendo o "-D" para especificar a instalacao em ambiente de desenvolvimento e nao de producao.
 Para validar o Nodemon, temos que alterar a parte de "scripts" do "package.json" com o seguinte codigo:
-
 	"scripts": {
 	    "test": "echo \"Error: no test specified\" && exit 1",
 	    "start": "nodemon index.js"
