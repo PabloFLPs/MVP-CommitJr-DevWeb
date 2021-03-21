@@ -48,7 +48,7 @@ import express from 'express';
 - Para gerar um arquivo TS Config, nasta executar o comando "yarn tsc --init".
 - Nesse arquivo config, ja iremos fazer uma alteracao: alterar o "target para es2017" -> converter apenas o necessario.
 - Utilizamos o comando "yarn add ts-node-dev -D" para instalar os pacotes "ts-node-dev" para executarmos o projeto com TS e Node.
-//"scripts" e um objeto assim como "devDependencies".
+P.S.: "scripts" e um objeto assim como "devDependencies".
 
 ## Configuracao Basica do CORS - Cross-origin Resource Sharing:
 
@@ -62,7 +62,7 @@ Ha uma forma alternativa a instrucao anterior, que e criar um "array function" c
 ```
 app.use((req, res, next) => {
 	//console.log("Acessando...");
-	res.header("Access-Control-Allow-Origin", "http://localhost:3333", "*"); //"*" qualquer URL/aplicacao pode fazer requisicao.
+	res.header("Access-Control-Allow-Origin", "http://localhost:3333", "*"); //"*" qualquer URL pode fazer requisicao.
 	res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
 	app.use(cors());
 	next();
