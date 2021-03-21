@@ -10,6 +10,7 @@ Primeiro Projeto como membro oficial da Commit Jr. O Back-end foi realizado em N
 - O comando ira criar o "package.json". Apos isso, crie um arquivo "index.js" utilizando o "echo > index.js".
 - Executar o "yarn add express", o pacote sera usado p criar o servidor para as requisicoes.
 - Editar o "index.js" com o seguinto codigo:
+
 	const express = require("express");
 	const app = express();
 
@@ -27,6 +28,7 @@ Primeiro Projeto como membro oficial da Commit Jr. O Back-end foi realizado em N
 - Para executar o servidor, basta utilizar o comando "node index.js" e acessar o endereco localhost:3333/test, sendo o "/test" por causa do metodo "get()" no "index.js".
 - Agora, para adicionarmos um "auto reload", basta instalar o Nodemon com o comando "npm install -D nodemon", sendo o "-D" para especificar a instalacao em ambiente de desenvolvimento e nao de producao.
 - Para validar o Nodemon, temos que alterar a parte de "scripts" do "package.json" com o seguinte codigo:
+
 	"scripts": {
 	    "test": "echo \"Error: no test specified\" && exit 1",
 	    "start": "nodemon index.js"
@@ -40,6 +42,7 @@ Primeiro Projeto como membro oficial da Commit Jr. O Back-end foi realizado em N
 - No diretorio do projeto, executar o comando "yarn add typescript -D" no terminal, sendo o -D para desenv.
 - Agora, criando o "index.ts", note que a extensao e ".ts" e nao ".js" como anteriormente.
 - O import do "express" via codigo no "index.ts" e feito agora da seguinte forma:
+
 	import express from 'express';
 
 - ** UTILIZAR O COMANDO "npm install express", PARA INSTALAR A "express.js". **
@@ -58,7 +61,8 @@ Primeiro Projeto como membro oficial da Commit Jr. O Back-end foi realizado em N
 
 - N esquecer do comando "npm install --save @types/cors".
 
-** Ha uma forma alternativa a instrucao anterior, que e criar um "array function" com o app.use(): **
+Ha uma forma alternativa a instrucao anterior, que e criar um "array function" com o app.use():
+
 	app.use((req, res, next) => {
 		//console.log("Acessando...");
 		res.header("Access-Control-Allow-Origin", "http://localhost:3333", "*"); //"*" qualquer URL/aplicacao pode fazer requisicao.
