@@ -58,7 +58,6 @@ O import do "express" via codigo no "index.ts" e feito agora da seguinte forma:
 - N esquecer do comando "npm install --save @types/cors".
 
 Ha uma forma alternativa a instrucao anterior, que e criar um "array function" com o app.use():
-
 	app.use((req, res, next) => {
 		//console.log("Acessando...");
 		res.header("Access-Control-Allow-Origin", "http://localhost:3333", "*"); //"*" qualquer URL/aplicacao pode fazer requisicao.
