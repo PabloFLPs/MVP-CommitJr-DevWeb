@@ -22,15 +22,16 @@ Editar o "index.js" com o seguinto codigo:
 	  });
 	});
 
-- Para executar o servidor, basta utilizar o comando "node index.js" e acessar o endereco localhost:3333/test, sendo o "/test" por causa do metodo "get()" no "index.js".
+Para executar o servidor, basta utilizar o comando "node index.js" e acessar o endereco localhost:3333/test, sendo o "/test" por causa do metodo "get()" no "index.js".
 - Agora, para adicionarmos um "auto reload", basta instalar o Nodemon com o comando "npm install -D nodemon", sendo o "-D" para especificar a instalacao em ambiente de desenvolvimento e nao de producao.
 Para validar o Nodemon, temos que alterar a parte de "scripts" do "package.json" com o seguinte codigo:
+
 	"scripts": {
 	    "test": "echo \"Error: no test specified\" && exit 1",
 	    "start": "nodemon index.js"
 	},
 	
-- Para rodar o server, basta utilizar "npm start" (sendo o "start", a parte add no "package.json").
+Para rodar o server, basta utilizar "npm start" (sendo o "start", a parte add no "package.json").
 //npm start inicia o o servidor com o nodemon, "auto reload"
 
 
@@ -41,7 +42,7 @@ O import do "express" via codigo no "index.ts" e feito agora da seguinte forma:
 
 	import express from 'express';
 
-- ** UTILIZAR O COMANDO "npm install express", PARA INSTALAR A "express.js". **
+** UTILIZAR O COMANDO "npm install express", PARA INSTALAR A "express.js". **
 
 - Para instalar a tipagem do "express", que e uma biblioteca, e utilizado o comando "yarn add @types/express -D". Isso precisa ser feito pelo fato de o "import" ocasionar alguns erros, ja que o projeto n reconhece os tipos de cada biblioteca, sendo necessario add a parte.
 - Para gerar um arquivo TS Config, nasta executar o comando "yarn tsc --init".
@@ -58,6 +59,7 @@ O import do "express" via codigo no "index.ts" e feito agora da seguinte forma:
 - N esquecer do comando "npm install --save @types/cors".
 
 Ha uma forma alternativa a instrucao anterior, que e criar um "array function" com o app.use():
+
 	app.use((req, res, next) => {
 		//console.log("Acessando...");
 		res.header("Access-Control-Allow-Origin", "http://localhost:3333", "*"); //"*" qualquer URL/aplicacao pode fazer requisicao.
