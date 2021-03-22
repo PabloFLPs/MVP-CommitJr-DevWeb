@@ -58,7 +58,7 @@ P.S.: "scripts" e um objeto assim como "devDependencies".
 
 - N esquecer do comando "npm install --save @types/cors".
 
-Ha uma forma alternativa a instrucao anterior, que e criar um "array function" com o app.use():
+Ha uma forma alternativa a instrucao anterior, que e criar um "arrow function" com o app.use():
 ```
 app.use((req, res, next) => {
 	//console.log("Acessando...");
